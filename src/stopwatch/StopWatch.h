@@ -1,8 +1,20 @@
 #ifndef STOPWATCH_H
 #define STOPWATCH_H
 
-// returns the amount of time in seconds that has passed since the process (i.e. your program) started executing 
-double getProcessTime();
+class StopWatch
+{
+public:
+    StopWatch();
+    void reset();//set stopwatch to zero
+    double getProcessTime();//show how long it takes for project to execute
+    void start(int &on);//start counting
+    void stop(int &on); // stop counting
+    ~StopWatch();
+    
+private:
+    double curr_time=0;
+    int on=0;
 
+};
 
-#endif
+#endif // STOPWATCH_H
