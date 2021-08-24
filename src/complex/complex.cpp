@@ -3,7 +3,7 @@
 
 #include <iostream>	// contains the definition of cout, endl
 #include <complex>	// contains the complex class definition
-
+//Exercise 3.1 : I think the commented code "(curly braces)" does not run because it has not been defined
 using namespace std; // cout, endl, complex are all part of this namespace
 
 int main()
